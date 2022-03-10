@@ -1,12 +1,311 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Rosemary</title>
+    <link rel="stylesheet" href="./css/destyle.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__inner">
+            <figure class="header__logo-wrapper">
+                <img src="./img/logo.png" alt="Cake Rosemary">
+            </figure><!-- /.header__logo-wrapper -->
+            <div class="header__menu-wrapper">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#about">about</a></li><!-- /.header__nav-item -->
+                        <li class="header__nav-item"><a href="#menu">menu</a></li><!-- /.header__nav-item -->
+                        <li class="header__nav-item"><a href="#access">access</a></li><!-- /.header__nav-item -->
+                        <li class="header__nav-item"><a href="#gallery">gallery</a></li><!-- /.header__nav-item -->
+                    </ul><!-- /.header__nav-list -->
+                </nav><!-- /.header__nav -->
+                <div class="header__contact">
+                    <a href="#" class="header__contact-button button contact-button">contact us</a><!-- /.header__contact-button button contact-button -->
+                </div><!-- /.header__contact -->
+            </div><!-- /.header__menu-wrapper -->
+        </div><!-- /.header__inner -->
+    </header><!-- /.header -->
+
+    <div class="fv">
+        <div class="fv__inner">
+            <div class="fv__contents-wrapper">
+                <h1 class="fv__contents">
+                    こだわりのイタリアンワインを片手に、<br>心ゆくまでお食事をお楽しみいただける本格イタリアン
+                </h1><!-- /.fv__contents -->
+            </div><!-- /.fv__contents-wrapper -->
+        </div><!-- /.fv__inner -->
+    </div><!-- /.fv -->
+
+    <main id="main">
+        <section class="section concept" id="concept">
+            <div class="section__inner concept__inner">
+                <div class="section__title-wrapper">
+                    <h2 class="section__title">
+                        CONCEPT
+                    </h2><!-- /.section__title -->
+                    <div class="section__title-img-wrapper">
+                        <img src="./img/title-bottom.png" alt="">
+                    </div><!-- /.section__title-img-wrapper -->
+                </div><!-- /.section__title-wrapper -->
+                <div class="concept__contents">
+                    <p>
+                        お料理を通じて生活や人生感そのものを良くする。<br>
+                        生命に感謝をし、オーガニック素材を生かしたお料理を提供いたします。<br>
+                        本場イタリアの小麦粉で作ったピッツァなど<br>
+                        本格イタリアンと選び抜いた地ビールやイタリアワインを嗜みながら<br>
+                        楽しい時間をお過ごしくださいませ。
+                    </p>
+                </div><!-- /.concept__contents -->
+            </div><!-- /.section__inner concept__inner -->
+        </section><!-- /#concept.section concept -->
+
+        <div class="vegetable-img-wrapper">
+            <img src="./img/fruit.png" alt="vegetable">
+        </div><!-- /.vegetable-img-wrapper -->
+
+        <section class="section menu" id="menu">
+            <div class="section__inner menu__inner">
+                <div class="section__title-wrapper">
+                    <h2 class="section__title">
+                        MENU
+                    </h2><!-- /.section__title -->
+                    <div class="section__title-img-wrapper">
+                        <img src="./img/title-bottom.png" alt="">
+                    </div><!-- /.section__title-img-wrapper -->
+                </div><!-- /.section__title-wrapper -->
+                <ul class="menu__items">
+                    <li class="menu__item menu-item">
+                        <figure class="menu-item__img-wrapper">
+                            <img src="./img/item1.jpg" alt="海老とアボカドのチョップドサラダ">
+                        </figure><!-- /.menu-item__img-wrapper -->
+                        <div class="menu-item__contents">
+                            <h3 class="menu-item__title">
+                                海老とアボカドのチョップドサラダ
+                            </h3><!-- /.menu-item__title -->
+                            <p class="menu-item__description">
+                                スーパーフードのキヌアや店仕込みのきのこミックスを使用し、自慢のトリュフオイルドレッシングを使った一押しサラダ。〈トリュフオイルドレッシング〉
+                            </p><!-- /.menu-item__description -->
+                            <p class="menu-item__price">
+                                ¥3,500
+                            </p><!-- /.menu-item__price -->
+                        </div><!-- /.menu-item__contents -->
+                    </li><!-- /.menu__item menu-item -->
+                    <li class="menu__item menu-item">
+                        <figure class="menu-item__img-wrapper">
+                            <img src="./img/item2.jpg" alt="マルゲリータ">
+                        </figure><!-- /.menu-item__img-wrapper -->
+                        <div class="menu-item__contents">
+                            <h3 class="menu-item__title">
+                                マルゲリータ
+                            </h3><!-- /.menu-item__title -->
+                            <p class="menu-item__description">
+                                世界一のピザが楽しめるナポリ本店で認定されたピザ職人が作るピザを楽しめます！
+                            </p><!-- /.menu-item__description -->
+                            <p class="menu-item__price">
+                                ¥3,600
+                            </p><!-- /.menu-item__price -->
+                        </div><!-- /.menu-item__contents -->
+                    </li><!-- /.menu__item menu-item -->
+                    <li class="menu__item menu-item">
+                        <figure class="menu-item__img-wrapper">
+                            <img src="./img/item3.jpg" alt="グレイスボウル">
+                        </figure><!-- /.menu-item__img-wrapper -->
+                        <div class="menu-item__contents">
+                            <h3 class="menu-item__title">
+                                グレイスボウル
+                            </h3><!-- /.menu-item__title -->
+                            <p class="menu-item__description">
+                                トレーニング中に最適なプロテインサラダ。タンパク質をしっかり摂取したい方におすすめ
+                            </p><!-- /.menu-item__description -->
+                            <p class="menu-item__price">
+                                ¥3,510
+                            </p><!-- /.menu-item__price -->
+                        </div><!-- /.menu-item__contents -->
+                    </li><!-- /.menu__item menu-item -->
+                    <li class="menu__item menu-item">
+                        <figure class="menu-item__img-wrapper">
+                            <img src="./img/item4.jpg" alt="パルマ産生ハムの盛り合わせ">
+                        </figure><!-- /.menu-item__img-wrapper -->
+                        <div class="menu-item__contents">
+                            <h3 class="menu-item__title">
+                                パルマ産生ハムの盛り合わせ
+                            </h3><!-- /.menu-item__title -->
+                            <p class="menu-item__description">
+                                塩と自然乾燥のみで、昔ながらの無添加の製法でつくられる生ハムの盛り合わせ！
+                            </p><!-- /.menu-item__description -->
+                            <p class="menu-item__price">
+                                ¥3,570
+                            </p><!-- /.menu-item__price -->
+                        </div><!-- /.menu-item__contents -->
+                    </li><!-- /.menu__item menu-item -->
+                    <li class="menu__item menu-item">
+                        <figure class="menu-item__img-wrapper">
+                            <img src="./img/item5.jpg" alt="ディアボラ">
+                        </figure><!-- /.menu-item__img-wrapper -->
+                        <div class="menu-item__contents">
+                            <h3 class="menu-item__title">
+                                ディアボラ
+                            </h3><!-- /.menu-item__title -->
+                            <p class="menu-item__description">
+                                ボロネーゼの肉々しさとトマトの酸味・チーズの濃厚さがビールの苦みに！
+                            </p><!-- /.menu-item__description -->
+                            <p class="menu-item__price">
+                                ¥3,590
+                            </p><!-- /.menu-item__price -->
+                        </div><!-- /.menu-item__contents -->
+                    </li><!-- /.menu__item menu-item -->
+                </ul><!-- /.menu__items -->
+                <div class="menu__button-wrapper">
+                    <div class="menu__button button">
+                        more view
+                    </div><!-- /.menu__button button -->
+                </div><!-- /.menu__button-wrapper -->
+            </div><!-- /.section__inner menu__inner -->
+        </section><!-- /#menu.section menu -->
+
+        <section class="section access" id="access">
+            <div class="section__inner access__inner">
+                <div class="section__title-wrapper">
+                    <h2 class="section__title">
+                        ACCESS
+                    </h2><!-- /.section__title -->
+                    <div class="section__title-img-wrapper">
+                        <img src="./img/title-bottom.png" alt="">
+                    </div><!-- /.section__title-img-wrapper -->
+                </div><!-- /.section__title-wrapper -->
+                <div class="access__contents">
+                    <div class="access__map-container">
+                        <div class="access__map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.633932308726!2d139.7611212772524!3d35.68150858552311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bf97912d02d%3A0xee1220ee8337117!2z44CSMTAwLTAwMDUg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65Li444Gu5YaF77yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1646899802684!5m2!1sja!2sjp" width="517" height="371" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div><!-- /.access__map-wrapper -->
+                    </div><!-- /.access__map-container -->
+                    <div class="access__info-contents">
+                        <div class="access__place-wrapper">
+                            <p class="access__place">〒100-0005 東京都千代田区丸の内１丁目</p><!-- /.access__place -->
+                            <a href="#" class="access__place-link">Google Maps</a><!-- /.access__place-link -->
+                        </div><!-- /.access__place-wrapper -->
+                        <table class="access__info-table">
+                            <tbody>
+                                <tr>
+                                    <th>OPEN:</th>
+                                    <td>月〜金 11:00~21:00 (L.o. 20:00)br
+                                        土 11:00~19:00 (L.o. 18:00)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>CLOSED:</th>
+                                    <td>日・祝</td>
+                                </tr>
+                                <tr>
+                                    <th>MAIL:</th>
+                                    <td>cafe@rosemary.net</td>
+                                </tr>
+                                <tr>
+                                    <th>TEL:</th>
+                                    <td>03-1234-5678</td>
+                                </tr>
+                            </tbody>
+                        </table><!-- /.access__info-table -->
+                        <p class="access__info-comment">
+                            ※貸し切り予約、随時承っております。お気軽にお問い合わせください。
+                        </p><!-- /.access__info-comment -->
+                    </div><!-- /.access__info-contents -->
+                </div><!-- /.access__contents -->
+            </div><!-- /.section__inner access__inner -->
+        </section><!-- /#access.section access -->
+
+        <section class="section gallery" id="gallery">
+            <div class="section__title-wrapper">
+                <h2 class="section__title">
+                    GALLERY
+                </h2><!-- /.section__title -->
+                <div class="section__title-img-wrapper">
+                    <img src="./img/title-bottom.png" alt="">
+                </div><!-- /.section__title-img-wrapper -->
+            </div><!-- /.section__title-wrapper -->
+            <div class="gallery__slider swiper">
+                <div class="swiper-wrapper gallery__slider-items">
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item1.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item2.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item3.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item1.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item2.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                    <div class="swiper-slide gallery__slider-item">
+                        <figure class="gallery__slider-img-wrapper">
+                            <img src="./img/slider-item3.png" alt="">
+                        </figure><!-- /.gallery__slider-img-wrapper -->
+                    </div><!-- /.swiper-slide gallery__slider-item -->
+                </div><!-- /.swiper-wrapper gallery__slider-items -->
+            </div><!-- /.gallery__slider swiper -->
+            <div class="swiper-pagination" style="position: static;"></div>
+        </section><!-- /#gallery.section gallery -->
+    </main><!-- /#main -->
+
+    <footer class="footer">
+        <div class="footer__inner inner">
+            <div class="footer__contents">
+                <div class="footer__top-info">
+                    <figure class="footer__logo-wrapper">
+                        <img src="./img/logo.png" alt="Cake Rosemary">
+                    </figure><!-- /.footer__logo-wrapper -->
+                    <ul class="footer__sns-wrapper">
+                        <li class="footer__sns-item"><a href="#">
+                            <img src="./img/instagram.png" alt="Instagram">
+                        </a></li><!-- /.footer__sns-item -->
+                        <li class="footer__sns-item"><a href="#">
+                            <img src="./img/twitter.png" alt="Twitter">
+                        </a></li><!-- /.footer__sns-item -->
+                        <li class="footer__sns-item"><a href="#">
+                            <img src="./img/facebook.png" alt="Facebook">
+                        </a></li><!-- /.footer__sns-item -->
+                    </ul><!-- /.footer__sns-wrapper -->
+                </div><!-- /.footer__top-info -->
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#">ABOUT US</a></li><!-- /.footer__nav-item -->
+                        <li class="footer__nav-item"><a href="#">MENU</a></li><!-- /.footer__nav-item -->
+                        <li class="footer__nav-item"><a href="#">ACCESS</a></li><!-- /.footer__nav-item -->
+                        <li class="footer__nav-item"><a href="#">PRIVACY POLICY</a></li><!-- /.footer__nav-item -->
+                        <li class="footer__nav-item"><a href="#">CONTACT US</a></li><!-- /.footer__nav-item -->
+                    </ul><!-- /.footer__nav-list -->
+                </nav><!-- /.footer__nav -->
+                <p class="footer__copyright">
+                    © Cafe  Rosemary All RightsR Reserved.
+                </p><!-- /.footer__copyright -->
+            </div><!-- /.footer__contents -->
+        </div><!-- /.footer__inner inner -->
+    </footer><!-- /.footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
