@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+$font-color: #333333;
+$main-color:#A0D793;
+
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+    color: $font-color;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+// =======================
+//  メディアクエリ
+// =======================
+
+$layout-width-inner: 1240px;
+
+$breakpoints: ("sp": "screen and (max-width: 599px)",
+    "tab": "screen and (max-width: 1024px)",
+    "pc": "screen and (min-width:1025px)",
+);
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// =======================
+//  共通部分
+// =======================
+
+.inner {
+    box-sizing: content-box;
+    padding: 0 30px;
+    margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0 20px;
+    }
+}
+
+
+.section__inner {
+    max-width: $layout-width-inner;
+
+    @include mq("sp") {
+
+    }
+}
+
+.button {
+    display: inline-block;
+}
+
+// =======================
+//	header
+// =======================
+
+.header{
+    padding: 37px 0 32px;
+}
+
+.header__inner{
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo-wrapper{
+    flex: 0 0 190px;
+}
+
+.header__menu-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.header__nav-item{
+    margin-right: 24px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    a{
+        display: block;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        font-family: 'Noto Serif JP', serif;
+        font-weight: 500;
+    text-transform: uppercase;
+    }
+}
+
+.header__contact-button{
+    padding: 8px 11px;
+    background: $main-color;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
