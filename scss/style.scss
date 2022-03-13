@@ -122,3 +122,33 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
     text-transform: uppercase;
 }
 
+// =======================
+//	fv
+// =======================
+
+.fv__inner{
+    max-width: 1440px;
+    position: relative;
+}
+
+.fv__contents-wrapper{
+    position: absolute;
+    left: 5.5555%;
+    bottom: 5.3472%;
+}
+
+.fv__contents{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.fv__bg-wrapper{
+    width: 82.9521%;
+    margin-left: auto;
+}
+
+.fv__bg{
+    width: 100%;
+    padding-top: 53.0492%;
+    background: url(../img/fv.png) no-repeat center center / contain;
+}
