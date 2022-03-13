@@ -199,3 +199,112 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
         letter-spacing: 0.03em;
     }
 }
+
+// =======================
+//	menu
+// =======================
+
+.menu{
+    padding: 40px 0 55px;
+    background: url(../img/menu-bg.png) no-repeat center center / cover;
+}
+
+.menu__items{
+    margin-bottom: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item{
+    flex: 0 0 48.3870%;
+    display: flex;
+    padding: 25px 21px 25px 20px;
+    background: #fff;
+    margin-bottom: 40px;
+    align-items: center;
+    position: relative;
+
+    &:first-child{
+        margin: 0 5% 40px;
+        min-width: 600px;
+
+        &::after{
+            content: "オススメの1品";
+            position: absolute;
+            padding: 8px 28px;
+            background: $main-color;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            color: #fff;
+            letter-spacing: 0.03em;
+            font-weight: 800;
+        }
+    }
+
+    &:nth-child(even){
+        margin-right: 3.2258%;
+    }
+
+    &:nth-child(4){
+        margin-bottom: 0;
+    }
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.menu-item__img-container{
+    flex: 0 0 35.7781%;
+    margin-right: 2.5044%;
+}
+
+.menu-item__img-wrapper{
+    position: relative;
+    padding-top: 100%;
+
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.menu-item__contents{
+    flex: 1 0 ;
+}
+
+.menu-item__title{
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+.menu-item__description{
+    font-size: 14px;
+    line-height: 1.4285;
+    letter-spacing: 0.03em;
+    margin-bottom: 14px;
+}
+
+.menu-item__price{
+    font-weight: 20px;
+    letter-spacing: 0.03em;
+    color: #cb3723;
+}
+
+.menu__button-wrapper{
+    text-align: center;
+}
+
+.menu__button{
+    padding: 12px 0;
+    width: 300px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    border: 1px solid #333333;
+}
