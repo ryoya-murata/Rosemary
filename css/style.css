@@ -386,4 +386,41 @@ img {
 .access__info-comment {
   letter-spacing: 0.03em;
 }
+
+.gallery {
+  padding: 0 0 30px;
+}
+
+.gallery__slider {
+  background: #fff;
+  padding: 25px 0;
+}
+
+.gallery__slider-items {
+  margin-bottom: 9px;
+}
+
+.gallery__slider-img-wrapper {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.gallery__slider-img-wrapper > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.swiper-pagination-bullet {
+  background: #DDDCD8;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #333333;
+}
 /*# sourceMappingURL=style.css.map */
