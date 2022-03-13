@@ -408,7 +408,6 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
 // =======================
 
 .gallery{
-    padding: 0 0 30px;
 }
 
 .gallery__slider{
@@ -443,3 +442,79 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
     background: #333333;
 }
 
+// =======================
+//	footer
+// =======================
+
+.footer{
+    padding: 68px 0 67px;
+    background: url(../img/footer-bg.png) no-repeat center / cover;
+}
+
+.footer__inner{
+    max-width: 1280px;
+}
+
+.footer__top-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.footer__logo-wrapper{
+    flex: 0 0 190px;
+}
+
+.footer__sns-wrapper{
+    display: flex;
+}
+
+.footer__sns-item{
+    margin-right: 24px;
+
+    &--instagram{
+        flex: 0 0 32px;
+    }
+
+    &--twitter{
+        flex: 0 0 38px;
+    }
+
+    &--facebook{
+        flex: 0 0 32px;
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    a{
+        display: block;
+    }
+}
+
+.footer__nav{
+    margin-bottom: 48px;
+}
+
+.footer__nav-list{
+    display: flex;
+}
+
+.footer__nav-item{
+    margin-right: 24px;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    a{
+        display: block;
+        letter-spacing: 0.03em;
+    }
+}
+
+.footer__copyright{
+    letter-spacing: 0.03em;
+}
