@@ -63,6 +63,38 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
     }
 }
 
+.section__title-wrapper{
+    text-align: center;
+}
+
+.section__title{
+    color: $main-color;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 800;
+}
+
+.section__title-img-wrapper{
+    width: 104px;
+    margin: 0 auto;
+
+    &--concept{
+        margin-bottom: 63px;
+    }
+
+    &--menu{
+        margin-bottom: 40px;
+    }
+
+    &--access{
+        margin-bottom: 32px;
+    }
+
+    &--gallery{
+        margin-bottom: 55px;
+    }
+}
+
 .button {
     display: inline-block;
 }
@@ -151,4 +183,19 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
     width: 100%;
     padding-top: 53.0492%;
     background: url(../img/fv.png) no-repeat center center / contain;
+}
+
+// =======================
+//	concept
+// =======================
+
+.concept{
+    padding: 63px 0 89px;
+}
+
+.concept__contents{
+    p{
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }
