@@ -36,6 +36,38 @@ img {
   max-width: 1240px;
 }
 
+.section__title-wrapper {
+  text-align: center;
+}
+
+.section__title {
+  color: #A0D793;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+.section__title-img-wrapper {
+  width: 104px;
+  margin: 0 auto;
+}
+
+.section__title-img-wrapper--concept {
+  margin-bottom: 63px;
+}
+
+.section__title-img-wrapper--menu {
+  margin-bottom: 40px;
+}
+
+.section__title-img-wrapper--access {
+  margin-bottom: 32px;
+}
+
+.section__title-img-wrapper--gallery {
+  margin-bottom: 55px;
+}
+
 .button {
   display: inline-block;
 }
@@ -132,5 +164,14 @@ img {
   width: 100%;
   padding-top: 53.0492%;
   background: url(../img/fv.png) no-repeat center center/contain;
+}
+
+.concept {
+  padding: 63px 0 89px;
+}
+
+.concept__contents p {
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=style.css.map */
