@@ -11,12 +11,16 @@ body {
   width: 100%;
   height: 100%;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 img {
   width: 100%;
   vertical-align: top;
+}
+
+#main {
+  background: url(../img/main-bg.png) no-repeat center/cover;
 }
 
 .inner {
@@ -294,5 +298,92 @@ img {
   font-weight: 800;
   letter-spacing: 0.03em;
   border: 1px solid #333333;
+}
+
+.access {
+  padding: 40px 0 55px;
+}
+
+.access__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.access__map-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.6935%;
+          flex: 0 0 41.6935%;
+  margin-right: 4.4355%;
+}
+
+.access__map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 71.76015%;
+}
+
+.access__map-wrapper > iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+.access__info-contents {
+  width: auto;
+}
+
+.access__place-wrapper {
+  margin-bottom: 22px;
+}
+
+.access__place {
+  letter-spacing: 0.03em;
+}
+
+.access__place-link {
+  display: inline-block;
+  letter-spacing: 0.03em;
+}
+
+.access__place-link span {
+  display: inline-block;
+  border-bottom: 1px solid #333333;
+}
+
+.access__place-icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.access__info-table th, .access__info-table td {
+  border-collapse: collapse;
+  padding: 3px;
+  letter-spacing: 0.03em;
+  padding-bottom: 12px;
+}
+
+.access__info-table td {
+  padding-left: 5px;
+}
+
+.access__info-table tr:first-child tr, .access__info-table tr:first-child td {
+  padding-bottom: 2px;
+}
+
+.access__info-comment {
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=style.css.map */

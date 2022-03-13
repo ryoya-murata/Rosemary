@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 img {
@@ -43,6 +43,10 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
 // =======================
 //  共通部分
 // =======================
+
+#main{
+    background: url(../img/main-bg.png) no-repeat center / cover;
+}
 
 .inner {
     box-sizing: content-box;
@@ -307,4 +311,94 @@ $breakpoints: ("sp": "screen and (max-width: 599px)",
     font-weight: 800;
     letter-spacing: 0.03em;
     border: 1px solid #333333;
+}
+
+// =======================
+//	access
+// =======================
+
+.access{
+    padding: 40px 0 55px;
+}
+
+.access__contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.access__map-container{
+    flex: 0 0 41.6935%;
+    margin-right: 4.4355%;
+}
+
+.access__map-wrapper{
+    position: relative;
+    width: 100%;
+    padding-top: 371 / 517 * 100%;
+
+    >iframe{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 3px;
+    }
+
+}
+
+.access__info-contents{
+    width: auto;
+}
+
+.access__place-wrapper{
+    margin-bottom: 22px;
+}
+
+.access__place{
+    letter-spacing: 0.03em;
+}
+
+.access__place-link{
+    display: inline-block;
+    letter-spacing: 0.03em;
+
+    span{
+        display: inline-block;
+        border-bottom: 1px solid #333333;
+    }
+}
+
+.access__place-icon{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.access__info-table{
+    th,td{
+        border-collapse: collapse;
+        padding: 3px;
+        letter-spacing: 0.03em;
+        padding-bottom: 12px;
+
+    }
+
+    td{
+        padding-left: 5px;
+    }
+
+    tr{
+        &:first-child{
+            tr,td{
+                padding-bottom: 2px;
+            }
+        }
+    }
+}
+
+.access__info-comment{
+    letter-spacing: 0.03em;
 }
