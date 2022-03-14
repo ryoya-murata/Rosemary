@@ -142,6 +142,20 @@ a {
     }
 }
 
+// =======================
+//	アニメーション
+// =======================
+
+.fade-block {
+    opacity: 0;
+    transition: all .8s ease-out;
+    transform: translateY(30px);
+
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 // =======================
 //	header
@@ -318,10 +332,10 @@ a {
     line-height: 1.7;
 }
 
-.hamberger__contact-button-wrapper{
+.hamberger__contact-button-wrapper {
     padding-left: 15px;
 
-    a{
+    a {
         padding: 15px 20px;
     }
 }
@@ -358,8 +372,7 @@ a {
     padding: 0;
     height: 100%;
 
-    @include mq('sp') {
-    }
+    @include mq('sp') {}
 }
 
 
@@ -367,11 +380,11 @@ a {
 .fv__contents {
     font-weight: 800;
     font-size: 40px;
-    font-size: clamp(30px,3vw,40px);
+    font-size: clamp(30px, 3vw, 40px);
     white-space: nowrap;
 
     @include mq('tab') {
-        font-size: clamp(20px,3vw,37px);
+        font-size: clamp(20px, 3vw, 37px);
     }
 
     @include mq('sp') {
@@ -381,16 +394,9 @@ a {
     }
 }
 
-// .fv__bg-wrapper {
-//     width: 82.9521%;
-//     margin-left: auto;
-//     height: 100%;
-// }
-
 .fv__bg {
     width: 80%;
     height: 100%;
-    // padding-top: 55.5555%;
     background: url(../img/fv.png) no-repeat center center / cover;
     position: relative;
     overflow: hidden;
@@ -402,21 +408,28 @@ a {
     }
 }
 
-.fv__contents-wrapper{
+.fv__contents-wrapper {
     width: 100%;
     position: absolute;
     bottom: 100px;
     left: 50%;
-    // transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all .8s ease-out;
+    opacity: 0;
 
-    &--black{
+    &.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    &--black {
         width: auto;
         bottom: 12.5%;
         left: 8.9%;
         color: #333;
     }
 
-    &--white{
+    &--white {
         bottom: 12.5%;
         left: -14%;
         color: #fff;
@@ -425,7 +438,7 @@ a {
             left: 0%;
         }
 
-        h1{
+        h1 {
             color: #fff;
         }
     }
@@ -449,6 +462,7 @@ a {
 
 .concept {
     padding: 63px 0 89px;
+
 
     @include mq('sp') {
         padding: 40px 0 60px;
@@ -619,7 +633,7 @@ a {
 // =======================
 
 .access {
-    padding: 40px 0 55px;
+    padding: 40px 0 0;
 }
 
 .access__inner {
@@ -731,7 +745,9 @@ a {
 //	gallery
 // =======================
 
-.gallery {}
+.gallery {
+    padding-top: 55px;
+}
 
 .gallery__slider-wrapper {
     background: #fff;
@@ -929,7 +945,7 @@ a {
     }
 }
 
-.is-not-sp{
+.is-not-sp {
     display: block;
 
     @include mq('sp') {
