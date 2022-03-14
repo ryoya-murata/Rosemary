@@ -438,7 +438,11 @@ a {
 // =======================
 
 .concept {
-    padding: 63px 0 89px;
+    padding: 63px 0 0 0;
+
+    @include mq('tab') {
+        padding: 50px 0 100px;
+    }
 
 
     @include mq('sp') {
@@ -446,7 +450,24 @@ a {
     }
 }
 
+.concept__inner{
+    position: relative;
+    padding-bottom: 200px;
+
+    @include mq('tab') {
+        padding: 0px 0 100px;
+    }
+
+
+    @include mq('sp') {
+        padding: 00px 0 60px;
+    }
+}
+
 .concept__contents {
+    position: relative;
+    z-index: 2;
+
     p {
         text-align: center;
         letter-spacing: 0.03em;
@@ -454,6 +475,19 @@ a {
         @include mq('sp') {
             font-size: 14px;
         }
+    }
+}
+
+.bg-text{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1;
+
+    @include mq('tab') {
+        bottom: 5%;
     }
 }
 
