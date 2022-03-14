@@ -19,12 +19,12 @@
     <header class="header">
         <div class="header__inner inner">
             <figure class="header__logo-wrapper">
-                <img src="./img/logo.png" alt="Cake Rosemary">
+                <a href="#"><img src="./img/logo.png" alt="Cake Rosemary"></a>
             </figure><!-- /.header__logo-wrapper -->
-            <div class="header__menu-wrapper">
+            <div class="header__menu-wrapper is-pc">
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="#about">about</a></li><!-- /.header__nav-item -->
+                        <li class="header__nav-item"><a href="#concept">about</a></li><!-- /.header__nav-item -->
                         <li class="header__nav-item"><a href="#menu">menu</a></li><!-- /.header__nav-item -->
                         <li class="header__nav-item"><a href="#access">access</a></li><!-- /.header__nav-item -->
                         <li class="header__nav-item"><a href="#gallery">gallery</a></li><!-- /.header__nav-item -->
@@ -34,19 +34,62 @@
                     <a href="#" class="header__contact-button button contact-button">contact us</a><!-- /.header__contact-button button contact-button -->
                 </div><!-- /.header__contact -->
             </div><!-- /.header__menu-wrapper -->
+            <div class="hamberger is-tab">
+                <div class="hamberger__line-wrapper">
+                    <span class="hamberger__line"></span><!-- /.hamberger__line -->
+                    <span class="hamberger__line"></span><!-- /.hamberger__line -->
+                    <span class="hamberger__line"></span><!-- /.hamberger__line -->
+                </div><!-- /.hamberger__line-wrapper -->
+                <nav class="hamberger-menu" id="hamberger">
+                    <ul class="hamberger-menu__list">
+                        <li class="hamberger-menu__list-item">
+                            <a href="#concept" class="hamberger-menu__item-link">
+                                about
+                            </a><!-- /.hamberger-menu__item-link -->
+                        </li><!-- /.hamberger-menu__list-item -->
+                        <li class="hamberger-menu__list-item">
+                            <a href="#menu" class="hamberger-menu__item-link">
+                                menu
+                            </a><!-- /.hamberger-menu__item-link -->
+                        </li><!-- /.hamberger-menu__list-item -->
+                        <li class="hamberger-menu__list-item">
+                            <a href="#concept" class="hamberger-menu__item-link">
+                                サービスについて
+                            </a><!-- /.hamberger-menu__item-link -->
+                        </li><!-- /.hamberger-menu__list-item -->
+                        <li class="hamberger-menu__list-item">
+                            <a href="#access" class="hamberger-menu__item-link">
+                                access
+                            </a><!-- /.hamberger-menu__item-link -->
+                        </li><!-- /.hamberger-menu__list-item -->
+                        <li class="hamberger-menu__list-item">
+                            <a href="#gallery" class="hamberger-menu__item-link">
+                                gallery
+                            </a><!-- /.hamberger-menu__item-link -->
+                        </li><!-- /.hamberger-menu__list-item -->
+                    </ul><!-- /.hamberger-menu__list -->
+                    <div class="hamberger__contact-button-wrapper">
+                        <a href="#" class="contact-button">contact us</a><!-- /.contact-button -->
+                    </div><!-- /.hamberger__contact-button-wrapper -->
+                </nav><!-- /.hamberger-menu -->
+
+                <div id="js-menu-bg"></div><!-- /.js-menu-bg -->
+            </div><!-- /.hamberger -->
         </div><!-- /.header__inner -->
     </header><!-- /.header -->
 
     <div class="fv">
         <div class="fv__inner inner">
-            <div class="fv__contents-wrapper">
-                <h1 class="fv__contents">
-                    こだわりのイタリアンワインを片手に、<br>心ゆくまでお食事をお楽しみいただける本格イタリアン
-                </h1><!-- /.fv__contents -->
-            </div><!-- /.fv__contents-wrapper -->
-            <div class="fv__bg-wrapper">
-                <div class="fv__bg"></div><!-- /.fv__bg -->
-            </div><!-- /.fv__bg-wrapper -->
+            <div class="fv__bg">
+                <div class="fv__contents-wrapper fv__contents-wrapper--white">
+                    <h1 class="fv__contents">こだわりのイタリアンワインを片手に、<br>心ゆくまでお食事をお楽しみいただける<br class="is-sp">本格イタリアン</h1><!-- /.fv__contents -->
+                </div><!-- /.fv__contents-wrapper fv__contents-wrapper--white -->
+            </div><!-- /.fv__bg -->
+            <div class="fv__contents-wrapper fv__contents-wrapper--black is-not-sp">
+                <div class="fv__contents-inner">
+                    <h1 class="fv__contents" aria-hidden="true">こだわりのイタリアンワインを片手に、<br>心ゆくまでお食事をお楽しみいただける本格イタリアン</h1><!-- /.fv__contents -->
+                </div><!-- /.fv__contents-inner -->
+            </div><!-- /.fv__contents-wrapper fv__contents-wrapper--black -->
         </div><!-- /.fv__inner -->
     </div><!-- /.fv -->
 
@@ -247,41 +290,43 @@
                     <img src="./img/title-bottom.png" alt="">
                 </div><!-- /.section__title-img-wrapper -->
             </div><!-- /.section__title-wrapper -->
-            <div class="gallery__slider swiper">
-                <div class="swiper-wrapper gallery__slider-items">
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item1.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item2.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item3.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item1.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item2.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                    <div class="swiper-slide gallery__slider-item">
-                        <figure class="gallery__slider-img-wrapper">
-                            <img src="./img/slider-item3.png" alt="">
-                        </figure><!-- /.gallery__slider-img-wrapper -->
-                    </div><!-- /.swiper-slide gallery__slider-item -->
-                </div><!-- /.swiper-wrapper gallery__slider-items -->
-                <div class="swiper-pagination" style="position: static;"></div>
-            </div><!-- /.gallery__slider swiper -->
+            <div class="gallery__slider-wrapper">
+                <div class="gallery__slider swiper">
+                    <div class="swiper-wrapper gallery__slider-items">
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item1.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item2.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item3.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item1.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item2.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                        <div class="swiper-slide gallery__slider-item">
+                            <figure class="gallery__slider-img-wrapper">
+                                <img src="./img/slider-item3.png" alt="">
+                            </figure><!-- /.gallery__slider-img-wrapper -->
+                        </div><!-- /.swiper-slide gallery__slider-item -->
+                    </div><!-- /.swiper-wrapper gallery__slider-items -->
+                    <div class="swiper-pagination" style="position: static;"></div>
+                </div><!-- /.gallery__slider swiper -->
+            </div><!-- /.gallery__slider-wrapper -->
         </section><!-- /#gallery.section gallery -->
     </main><!-- /#main -->
 
@@ -290,7 +335,7 @@
             <div class="footer__contents">
                 <div class="footer__top-info">
                     <figure class="footer__logo-wrapper">
-                        <img src="./img/logo.png" alt="Cake Rosemary">
+                        <a href="#"><img src="./img/logo.png" alt="Cake Rosemary"></a>
                     </figure><!-- /.footer__logo-wrapper -->
                     <ul class="footer__sns-wrapper">
                         <li class="footer__sns-item  footer__sns-item--instagram"><a href="#">
