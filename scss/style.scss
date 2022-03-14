@@ -496,8 +496,12 @@ a {
 // =======================
 
 .menu {
-    padding: 40px 0 55px;
+    padding: 72px 0 135px;
     background: url(../img/menu-bg.png) no-repeat center center / cover;
+
+    @include mq('sp') {
+        padding: 60px 0 100px;
+    }
 }
 
 .menu__items {
