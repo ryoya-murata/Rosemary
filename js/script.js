@@ -1,23 +1,31 @@
+const theWrapper = document.getElementById('swiper-wrapper');
 var mySwiper = new Swiper('.swiper', {
-    slidesPerView: 1,
+    allowTouchMove: false,
+    slidesPerView: 2,
     initialSlide: 0,
     spaceBetween: 16,
     centeredSlides: true,
     loop: true,
-    speed: 1500,
+    loopedSlides: 6,
+    speed: 3000,
     clickable: true,
     autoplay: {
-        delay: 4000,
-        // disableOnInteraction: false
+        delay: 0,
+        disableOnInteraction: false
     },
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true,
     },
+    on: {
+        slideChangeTransitionStart: function(){
+          theWrapper.style.transitionTimingFunction = 'linear';
+        }
+      },
     breakpoints: {
         600: {
-            slidesPerView: 2,
+            slidesPerView: 2.5,
             slidesPerGroup: 1,
             spaceBetween: 30,
         },
