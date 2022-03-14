@@ -4,7 +4,7 @@ var mySwiper = new Swiper('.swiper', {
     spaceBetween: 16,
     centeredSlides: true,
     loop: true,
-    speed:1500,
+    speed: 1500,
     clickable: true,
     autoplay: {
         delay: 4000,
@@ -15,13 +15,13 @@ var mySwiper = new Swiper('.swiper', {
         type: 'bullets',
         clickable: true,
     },
-    breakpoints:{
-        600:{
+    breakpoints: {
+        600: {
             slidesPerView: 2,
             slidesPerGroup: 1,
             spaceBetween: 30,
         },
-        1025:{
+        1025: {
             slidesPerView: 5.5,
             // slidesPerGroup: 2,
             spaceBetween: 16,
@@ -66,9 +66,21 @@ $('#hamberger a[href]').on('click', function (event) {
 });
 
 
-$('#js-menu-bg').on('click', function () {
-    if ($(this).hasClass('open')) {
-        $(this).removeClass('open');
-        $('.hamberger-menu, .hamberger__line-wrapper').removeClass('open');
-    }
+$(function () {
+    $(window).scroll(function () {
+        $(".fade-block").each(function () {
+            var scroll = $(window).scrollTop();
+            var blockPosition = $(this).offset().top;
+            var windowHeihgt = $(window).height();
+            if (scroll > blockPosition - windowHeihgt + 200) {
+                $(this).addClass("active");
+            }
+        });
+    });
 });
+
+window.onload = function () {
+    setTimeout(function () {
+        $(".fv__contents-wrapper").addClass("active");
+    }, 1000)
+}
