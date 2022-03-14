@@ -447,13 +447,41 @@ a:hover {
 }
 
 .concept {
-  padding: 63px 0 89px;
+  padding: 63px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .concept {
+    padding: 50px 0 100px;
+  }
 }
 
 @media screen and (max-width: 599px) {
   .concept {
     padding: 40px 0 60px;
   }
+}
+
+.concept__inner {
+  position: relative;
+  padding-bottom: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  .concept__inner {
+    padding: 0px 0 100px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .concept__inner {
+    padding: 00px 0 60px;
+  }
+}
+
+.concept__contents {
+  position: relative;
+  z-index: 2;
 }
 
 .concept__contents p {
@@ -467,9 +495,31 @@ a:hover {
   }
 }
 
+.bg-text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .bg-text {
+    bottom: 5%;
+  }
+}
+
 .menu {
-  padding: 40px 0 55px;
+  padding: 72px 0 135px;
   background: url(../img/menu-bg.png) no-repeat center center/cover;
+}
+
+@media screen and (max-width: 599px) {
+  .menu {
+    padding: 60px 0 100px;
+  }
 }
 
 .menu__items {
