@@ -236,7 +236,7 @@ a {
     height: 25px;
 }
 
-#body.open{
+#body.open {
     overflow: hidden;
 }
 
@@ -300,7 +300,7 @@ a {
     }
 }
 
-.hamberger__contents{
+.hamberger__contents {
     padding-top: 25px;
     position: fixed;
     right: 0;
@@ -357,14 +357,14 @@ a {
     }
 }
 
-.hamberger__logo-wrapper{
+.hamberger__logo-wrapper {
     width: 160px;
     margin-left: 30px;
     margin-bottom: 100px;
 
     @include mq('sp') {
         width: 120px;
-    margin-left: 20px;
+        margin-left: 20px;
 
     }
 }
@@ -374,7 +374,7 @@ a {
 // =======================
 
 .fv {
-    padding: 80vh 20px 72px 0 ;
+    padding: 80vh 20px 72px 0;
     background: url(../img/fv.jpg) no-repeat center / cover;
 
     @include mq('tab') {
@@ -383,7 +383,7 @@ a {
 
     @include mq('sp') {
         padding: 50vh 20px 40px 0;
-        
+
     }
 }
 
@@ -425,7 +425,7 @@ a {
     transition: all .8s ease-out;
     opacity: 0;
 
-    h1{
+    h1 {
         color: #fff;
     }
 
@@ -464,7 +464,7 @@ a {
     }
 }
 
-.concept__inner{
+.concept__inner {
     position: relative;
     padding-bottom: 200px;
 
@@ -492,7 +492,7 @@ a {
     }
 }
 
-.bg-text{
+.bg-text {
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -781,16 +781,11 @@ a {
 .gallery__slider-wrapper {
     background: #fff;
 
-    @include mq('sp') {
-    }
+    @include mq('sp') {}
 }
 
 .gallery__slider {
     padding: 25px 0;
-}
-
-.gallery__slider-items {
-    margin-bottom: 9px;
 }
 
 .gallery__slider-img-wrapper {
