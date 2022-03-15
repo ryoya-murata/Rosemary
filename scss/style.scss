@@ -236,6 +236,10 @@ a {
     height: 25px;
 }
 
+#body.open{
+    overflow: hidden;
+}
+
 .hamberger__line-wrapper {
     display: inline-block;
     width: 30px;
@@ -244,11 +248,12 @@ a {
     z-index: 100;
 
     &.open {
+
         .hamberger__line {
             &:nth-child(1) {
                 width: 100%;
-                transform: rotate(45deg);
-                top: 10.5px;
+                transform: rotate(-225deg);
+                top: 12px;
             }
 
             &:nth-child(2) {
@@ -257,8 +262,8 @@ a {
 
             &:nth-child(3) {
                 width: 100%;
-                transform: rotate(-45deg);
-                bottom: 10.5px;
+                transform: rotate(225deg);
+                bottom: 12px;
             }
         }
     }
@@ -266,7 +271,7 @@ a {
 
 .hamberger__line {
     display: inline-block;
-    height: 3px;
+    height: 1px;
     background-color: #333333;
     position: absolute;
 
@@ -295,31 +300,41 @@ a {
     }
 }
 
-.hamberger-menu {
+.hamberger__contents{
+    padding-top: 25px;
     position: fixed;
-    z-index: 50;
     right: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: rgba(255, 255, 255, 1);
-    border-radius: 0px 0px 0px 3px;
-    padding: 102px 0 56px;
-    transform: translateX(100%);
-    transition: all .3s;
+    transition: all .3s ease;
+    z-index: -100;
+    opacity: 0;
+    background: transparent;
 
     &.open {
-        transform: translateX(0);
+        opacity: 1;
+        z-index: 50;
+        background: #fff;
     }
+
+    @include mq('sp') {
+        padding-top: 20px;
+    }
+}
+
+.hamberger-menu {
+    border-radius: 0px 0px 0px 3px;
 }
 
 .hamberger-menu__list {
     margin-bottom: 30px;
+    padding: 0 20px;
 }
 
 .hamberger-menu__list-item {
-    border-bottom: 1px solid #333;
-    padding: 30px 10px 30px 20px;
+    padding: 15px 0px;
+    text-align: center;
 
     &:first-child {}
 }
@@ -327,31 +342,30 @@ a {
 .hamberger-menu__item-link {
     display: inline-block;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0.03em;
     line-height: 1.7;
     text-transform: uppercase;
 }
 
 .hamberger__contact-button-wrapper {
-    padding-left: 15px;
+    text-align: center;
 
     a {
         padding: 15px 20px;
+        display: inline-block;
     }
 }
 
-#js-menu-bg {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-    display: none;
+.hamberger__logo-wrapper{
+    width: 160px;
+    margin-left: 30px;
+    margin-bottom: 100px;
 
-    &.open {
-        display: block;
+    @include mq('sp') {
+        width: 120px;
+    margin-left: 20px;
+
     }
 }
 
@@ -768,7 +782,6 @@ a {
     background: #fff;
 
     @include mq('sp') {
-        padding: 0 20px;
     }
 }
 
