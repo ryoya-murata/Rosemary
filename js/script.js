@@ -57,11 +57,11 @@ $(function () {
 
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
-            $('.hamberger-menu, #js-menu-bg').removeClass('open');
+            $('.hamberger-menu, .hamberger__contents, #body').removeClass('open');
 
         } else {
             $(this).addClass('open');
-            $('.hamberger-menu, #js-menu-bg').addClass('open');
+            $('.hamberger-menu, .hamberger__contents, #body').addClass('open');
 
         }
 
